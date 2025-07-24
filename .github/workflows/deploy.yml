@@ -18,7 +18,7 @@ jobs:
           set -e
           set -x
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY_2 }}" > ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PRIVATE_KEY_3 }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H 186.250.185.26 >> ~/.ssh/known_hosts
 
